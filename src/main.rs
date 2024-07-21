@@ -32,6 +32,7 @@ fn main() {
             };
 
             print!("{}", ascii[index].truecolor(color[0], color[1], color[2]));
+            //print!("{}", ascii[index].truecolor(color[0] / 3, color[1] / 3, color[2] / 3).on_truecolor(color[0], color[1], color[2]));
         }
         print!("\n");
     }
