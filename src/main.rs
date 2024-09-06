@@ -6,8 +6,8 @@ fn main() {
 
     let mut image = ImageReader::open("input.png").expect("Err").decode().expect("Err");
     image = image.resize(
-        image.width() / 32, 
-        image.height() / 32, 
+        image.width() / 1, 
+        image.height() / 1, 
         image::imageops::FilterType::Nearest
     );
 
@@ -27,7 +27,7 @@ fn main() {
                 0.3 => 7,
                 0.2 => 8,
                 0.1 => 9,
-                0.0 => 0,
+                0.0 => 9,
                 _ => 0,
             };
 
